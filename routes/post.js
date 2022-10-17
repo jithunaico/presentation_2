@@ -12,7 +12,7 @@ router.get("/public",(req,res)=>{
 })
 
 router.get("/private",checkAuth,(req,res)=>{
-    res.json({publicPosts})
+    res.json({privatePosts})
 
 })
 module.exports = router
